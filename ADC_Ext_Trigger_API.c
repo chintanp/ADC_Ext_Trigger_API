@@ -120,7 +120,7 @@ int main(){
 	    UARTprintf("ADC ->\n");
 	    UARTprintf("  Type: Slide Potentiometer\n");
 	    UARTprintf("  Samples: One\n");
-	    UARTprintf("  Update Rate: 250ms\n");
+	    UARTprintf("  Updates on PF4 press");
 	    UARTprintf("  Input Pin: PE2\n\n");
 
 	    //
