@@ -1,0 +1,38 @@
+Dependencies for Project 'ADC_Ext_Trigger_API', Target 'project0': (DO NOT MODIFY !)
+F (.\ADC_Ext_Trigger_API.c)(0x557FC6CC)(-c --cpu Cortex-M4.fp -D__EVAL -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I.. -I..\..\..\.. --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_TM4C123GH6PM -DTARGET_IS_TM4C123_RB1-o .\rvmdk\adc_ext_trigger_api.o --omf_browse .\rvmdk\adc_ext_trigger_api.crf --depend .\rvmdk\adc_ext_trigger_api.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7E87C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7E87C)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7E87C)
+I (..\..\..\..\inc/hw_ints.h)(0x557C4316)
+I (..\..\..\..\inc/hw_memmap.h)(0x557C4316)
+I (..\..\..\..\inc/hw_uart.h)(0x557C4316)
+I (..\..\..\..\inc/hw_gpio.h)(0x557C4316)
+I (..\..\..\..\inc/hw_pwm.h)(0x557C4316)
+I (..\..\..\..\inc/hw_types.h)(0x557C4316)
+I (..\..\..\..\driverlib/adc.h)(0x557EC1EB)
+I (..\..\..\..\driverlib/timer.h)(0x557C42B2)
+I (..\..\..\..\driverlib/gpio.c)(0x557C42B1)
+I (..\..\..\..\inc/hw_sysctl.h)(0x557C4316)
+I (..\..\..\..\driverlib/debug.h)(0x557C42B1)
+I (..\..\..\..\driverlib/gpio.h)(0x557EC1D3)
+I (..\..\..\..\driverlib/interrupt.h)(0x557C42B1)
+I (..\..\..\..\driverlib/pin_map.h)(0x557C42B1)
+I (..\..\..\..\driverlib/rom.h)(0x557C42B1)
+I (..\..\..\..\driverlib/rom_map.h)(0x557C42B1)
+I (..\..\..\..\driverlib/sysctl.c)(0x557C42B1)
+I (..\..\..\..\inc/hw_nvic.h)(0x557C4316)
+I (..\..\..\..\inc/hw_flash.h)(0x557C4316)
+I (..\..\..\..\driverlib/cpu.h)(0x557C42B1)
+I (..\..\..\..\driverlib/sysctl.h)(0x557EC1B5)
+I (..\..\..\..\driverlib/uart.h)(0x557EC18C)
+I (..\..\..\..\driverlib/udma.h)(0x557C42B2)
+I (..\..\..\..\driverlib/pwm.h)(0x557C42B1)
+I (..\..\..\..\driverlib/ssi.h)(0x557C42B1)
+I (..\..\..\..\driverlib/systick.h)(0x557C42B2)
+I (..\..\..\..\utils/uartstdio.h)(0x557EC14F)
+I (C:\Keil\ARM\ARMCC\include\stdarg.h)(0x51C7E87C)
+I (..\..\..\..\utils/uartstdio.c)(0x557C4393)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7E87C)
+F (.\startup_rvmdk.S)(0x557C42F5)(--cpu Cortex-M4.fp --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Luminary-o .\rvmdk\startup_rvmdk.o --depend .\rvmdk\startup_rvmdk.d)
+F (..\..\..\..\driverlib\rvmdk\driverlib.lib)(0x557C42B2)()
+F (.\readme.txt)(0x557C42F5)()
