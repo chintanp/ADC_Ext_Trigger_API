@@ -95,7 +95,7 @@ void InitPortEF(void) {
   */
   GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_4);
   GPIOPadConfigSet(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
-	GPIOIntTypeSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_FALLING_EDGE);
+	GPIOIntTypeSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_FALLING_EDGE); // Making the ADC Trigger happen once per switch press, i.e. onButtonDown
 	// Make PF4 a trigger for ADC
 	GPIOADCTriggerEnable(GPIO_PORTF_BASE, GPIO_PIN_4);
 }
