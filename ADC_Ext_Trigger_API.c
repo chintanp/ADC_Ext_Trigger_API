@@ -29,7 +29,9 @@
 #include "utils/uartstdio.c"
 #include <string.h>
 
-void InitPortE(void);
+void InitPortEF(void);      // Function to initialise Port E and Port F
+
+//volatile uint32_t value=0;  // global variable - Stores the value from PF4
 //*****************************************************************************
 //
 // This function sets up UART0 to be used for a console to display information
@@ -87,16 +89,13 @@ void InitPortEF(void) {
 	// For making PE2 as ADC input pin
 	GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_2);
 	
-//	// Making PE1 as trigger for ADC
-//	GPIOADCTriggerEnable(GPIO_PORTE_BASE, GPIO_PIN_1);
-	
 	/*
     Configure the switch on the left of the launchpad, GPIO_PIN_4 to a input with
     internal pull-up.
   */
   GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_4);
   GPIOPadConfigSet(GPIO_PORTF_BASE, GPIO_PIN_4, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
-	
+	GPIOIntTypeSet(GPIO_PORTF_BASE,GPIO_PIN_4,GPIO_FALLING_EDGE);
 	// Make PF4 a trigger for ADC
 	GPIOADCTriggerEnable(GPIO_PORTF_BASE, GPIO_PIN_4);
 }
@@ -120,7 +119,7 @@ int main(){
 	    UARTprintf("ADC ->\n");
 	    UARTprintf("  Type: Slide Potentiometer\n");
 	    UARTprintf("  Samples: One\n");
-	    UARTprintf("  Update Rate: 250ms\n");
+	    UARTprintf("  Updates on PF4 press");
 	    UARTprintf("  Input Pin: PE2\n\n");
 
 	    //
@@ -166,6 +165,7 @@ int main(){
 	    //
 	    while(1)
 	    {
+				  SysCtlDelay(7000000);
 	        //
 	        // Trigger the ADC conversion.
 	        //
